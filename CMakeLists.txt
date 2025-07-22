@@ -10,7 +10,6 @@ include_directories(.)
 set(CUDA_NVCC_FLAGS ${CUDA_NVCC_FLAGS};
     -O3 --use_fast_math --maxrregcount=128 --ptxas-options=-v -std=c++11
     -gencode arch=compute_80,code=sm_80
-    -gencode arch=compute_86,code=sm_86
     -gencode arch=compute_89,code=sm_89
 )
 
